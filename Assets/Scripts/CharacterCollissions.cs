@@ -58,6 +58,23 @@ public class CharacterCollissions : MonoBehaviour
         Debug.Log("respawn");
         transform.position = SpawPosition.transform.position;
         UIManager.Instance.ChangeLife(-1);
+    }
 
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Platform"))
+        {
+            // Asigna la plataforma como padre del personaje para que se mueva con ella
+            transform.parent = other.transform;
+        }
+    }
+
+    void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.CompareTag("Platform"))
+        {
+            // Desasigna la plataforma como padre del personaje
+            transform.parent = null;
+        }
     }
 }

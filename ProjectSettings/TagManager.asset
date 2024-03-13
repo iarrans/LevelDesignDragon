@@ -10,6 +10,7 @@ TagManager:
   - Life
   - Deathzone
   - Spawn
+  - Platform
   layers:
   - Default
   - TransparentFX
