@@ -32,5 +32,14 @@ public class CharacterCollissions : MonoBehaviour
             UIManager.Instance.ActivatedEndPanel();
             Debug.Log("Aquí se activa pantalla de fin");
         }
+        if (other.CompareTag("End"))
+        {
+            UIManager.Instance.ActivatedEndPanel();
+            Debug.Log("Aquí se activa pantalla de fin");
+        }
+        if (other.CompareTag("Deathzone"))
+        {
+            Debug.Log("Aquí se activa el respawn");
+        }
     }
 }

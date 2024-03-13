@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - End
   - Life
+  - Deathzone
   layers:
   - Default
   - TransparentFX
