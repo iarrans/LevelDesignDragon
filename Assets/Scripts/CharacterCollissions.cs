@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class CharacterCollissions : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //Puntos de spawn
+    public Transform SpawPosition;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -39,7 +41,23 @@ public class CharacterCollissions : MonoBehaviour
         }
         if (other.CompareTag("Deathzone"))
         {
-            Debug.Log("Aquí se activa el respawn");
+            //Se evalúa el punto de respawn más cercano a donde el jugador ha caído (sin contar la altura y)
+            Debug.Log("Aquí se respawnea");
+            RespawnNearestPosition();
         }
+        if (other.CompareTag("Spawn"))
+        {
+            //Se evalúa el punto de respawn más cercano a donde el jugador ha caído (sin contar la altura y)
+            Debug.Log("Aquí se cambia el punto de respawn");
+            SpawPosition = other.transform;
+        }
+    }
+
+    public void RespawnNearestPosition()
+    {
+        Debug.Log("respawn");
+        transform.position = SpawPosition.transform.position;
+        UIManager.Instance.ChangeLife(-1);
+
     }
 }
