@@ -11,7 +11,7 @@ public class CameraMovementScript : MonoBehaviour
     private Vector3 offset; // Distancia entre la cámara y el personaje
     public float distance = 3f; // Distancia inicial de la cámara al personaje
     private Vector2 lookInput; // Entrada del ratón para la rotación de la cámara
-    public LayerMask obstructionMask;
+    public LayerMask obstructionMask; 
 
     void Start()
     {
