@@ -28,6 +28,7 @@ public class CharacterCollissions : MonoBehaviour
         {
             UIManager.Instance.ChangeLife(1);
             Debug.Log("Aquí habría sonido daño");
+            other.gameObject.SetActive(false);
         }
         if (other.CompareTag("End"))
         {
