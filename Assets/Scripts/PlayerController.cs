@@ -57,10 +57,11 @@ public class PlayerController : MonoBehaviour
     public void OnJump(InputAction.CallbackContext context)
     {
         // Manejar el salto
-        //if (isGrounded)
-        //{
+        //transform.parent = null;
+        if (isGrounded)
+        {
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        //}
+        }
     }
 
 }
