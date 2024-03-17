@@ -14,7 +14,7 @@ public class CharacterCollissions : MonoBehaviour
         if (other.CompareTag("Coin"))
         {
             other.transform.GetComponent<CoinBehaviour>().AddCoins();
-            UIManager.Instance.ChangeLife(1);
+            //UIManager.Instance.ChangeLife(1);
             Debug.Log("Aquí habría sonido moneda");
             other.gameObject.SetActive(false);
         }
