@@ -6189,9 +6189,9 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5.07
+  m_Intensity: 7.08
   m_Range: 21.54
-  m_SpotAngle: 86.2
+  m_SpotAngle: 96.5
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -8539,7 +8539,7 @@ GameObject:
   - component: {fileID: 931420218}
   m_Layer: 0
   m_Name: Balancin1
-  m_TagString: Untagged
+  m_TagString: JumpablePlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8842,7 +8842,7 @@ Transform:
   m_GameObject: {fileID: 952419013}
   serializedVersion: 2
   m_LocalRotation: {x: 0.38931927, y: -0.4439219, z: 0.6713602, w: 0.44792792}
-  m_LocalPosition: {x: 10.99, y: 12.049, z: 29.838}
+  m_LocalPosition: {x: 10.99, y: 12.049, z: 30.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8860,7 +8860,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.54
+  m_Intensity: 0.8
   m_Range: 21.54
   m_SpotAngle: 164.3
   m_InnerSpotAngle: 21.80208
@@ -19279,7 +19279,7 @@ GameObject:
   - component: {fileID: 1908082653}
   m_Layer: 0
   m_Name: Balancin2
-  m_TagString: Untagged
+  m_TagString: JumpablePlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20834,7 +20834,7 @@ GameObject:
   - component: {fileID: 2020262725}
   m_Layer: 0
   m_Name: additionalPlatform
-  m_TagString: Untagged
+  m_TagString: JumpablePlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20919,7 +20919,7 @@ Transform:
   m_GameObject: {fileID: 2020262724}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.9248, y: 8.307, z: 17.585}
+  m_LocalPosition: {x: -5.9248, y: 8.409, z: 17.585}
   m_LocalScale: {x: 0.21108404, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

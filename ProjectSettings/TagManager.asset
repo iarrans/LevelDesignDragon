@@ -11,6 +11,7 @@ TagManager:
   - Deathzone
   - Spawn
   - Platform
+  - JumpablePlatform
   layers:
   - Default
   - TransparentFX

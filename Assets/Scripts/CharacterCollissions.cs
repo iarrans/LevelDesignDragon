@@ -68,6 +68,12 @@ public class CharacterCollissions : MonoBehaviour
             // Asigna la plataforma como padre del personaje para que se mueva con ella
             transform.parent = other.transform;
         }
+
+        if (other.gameObject.CompareTag("JumpablePlatform"))
+        {
+            // Asigna la plataforma como padre del personaje para que se mueva con ella
+            transform.GetComponent<PlayerController>().isGrounded = true;
+        }
     }
 
     void OnCollisionExit(Collision other)
@@ -77,5 +83,12 @@ public class CharacterCollissions : MonoBehaviour
             // Desasigna la plataforma como padre del personaje
             transform.parent = null;
         }
+        if (other.gameObject.CompareTag("JumpablePlatform"))
+        {
+            // Asigna la plataforma como padre del personaje para que se mueva con ella
+            transform.GetComponent<PlayerController>().isGrounded = false;
+        }
     }
+
+
 }

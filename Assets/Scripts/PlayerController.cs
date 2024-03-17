@@ -12,8 +12,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     private Vector2 moveInput;
 
-    [SerializeField]
-    private bool isGrounded;
+    public bool isGrounded;
 
     void Start()
     {
