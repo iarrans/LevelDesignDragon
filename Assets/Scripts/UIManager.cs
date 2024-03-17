@@ -15,6 +15,10 @@ public class UIManager : MonoBehaviour
 
     public GameObject TextBoxEnd;
 
+    public GameObject ContinueButton;
+    public GameObject FinishButton;
+    public TextMeshProUGUI endingText;
+
     public int coinsNumber;
 
     public int livesNumber;
@@ -33,12 +37,21 @@ public class UIManager : MonoBehaviour
     public void AddCoins(int quantity)
     {
         coinsNumber+= quantity;
-        moneyText.text = "ADN parts: " + coinsNumber.ToString();
+        moneyText.text = "DNA parts: " + coinsNumber.ToString() + "/50";
     }
 
     public void ActivatedEndPanel()
     {
-        TextBoxEnd?.SetActive(true);
+        TextBoxEnd.SetActive(true);
+        if (coinsNumber >= 50)
+        {
+            FinishButton.SetActive(true);
+            endingText.text = "Great job! We havenow enough samples to test this dna properly. Do you want to keep exploring or should we move to the next task, Ms Devcon?";
+        }
+        else
+        {
+            endingText.text = "We need, at least, 50 dna samples to do our tests efficiently. Please, look for more dna. You will be properly rewarded";
+        }
         canMove = false;
     }
 
